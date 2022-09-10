@@ -11,7 +11,6 @@ void SIGTSTP_handler(){
  filho2 = 1;
 }
 
-
 int main (void){
   childpid = fork();
   signal(SIGTSTP, SIGTSTP_handler);
@@ -50,8 +49,3 @@ int main (void){
       }
   }
 }
-
-
-
-
-//filho 2 tem que ter wait
